@@ -1,11 +1,11 @@
  #include <ESP8266WiFi.h>
- const char* ssid     = "ASIACELL-5D55";
- const char* password = "91261576";
+ const char* ssid     = "SSID";
+ const char* password = "PASSWORD";
  double alpha=0.75;
  static double oldValue=0;
  int period=20;
  double refresh=0.0;
- const char* host = "5.10.230.123";
+ const char* host = "URL IP";
 
 void setup() {
   Serial.begin(115200);
@@ -51,7 +51,7 @@ void loop() {
   }
   
   // We now create a URI for the request
-  String url = "http://5.10.230.123/tabarak/mysql0.php?value";
+  String url = "URL";
   
 int beat=analogRead(17);
    double pulse=alpha*oldValue+(0-alpha)*beat;
